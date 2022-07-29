@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ANC_admin" prefHeight="581.0" prefWidth="711.0" style="-fx-background-color: #00d6d6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="biwta_ferry_root_.AdminController">
+   <children>
+      <MenuButton fx:id="Menu_Admin" layoutX="729.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="150.0" style="-fx-background-color: #4aa5c2;" text="         Menu">
+         <items>
+            <MenuItem id="Creat_New_User" fx:id="Creat_New_User" onAction="#Creat_New_User" text="Creat New User" />
+            <MenuItem id="Update_user" fx:id="Update_user" onAction="#Update_user" text="Update User Info" />
+            <MenuItem id="Bug_Report" fx:id="Bug_Report" onAction="#Bug_Report" text="Check Bug Report" />
+         </items>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MenuButton>
+      <Button id="Log_Out" fx:id="Log_Out" layoutX="729.0" layoutY="75.0" mnemonicParsing="false" onAction="#Log_Out" prefHeight="41.0" prefWidth="150.0" style="-fx-background-color: #4aa5c2;" text="Log Out">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
